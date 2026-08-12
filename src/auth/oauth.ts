@@ -4,7 +4,7 @@ import type { TokenRecord } from './store.js';
 
 // openid를 추가하면 id_token(JWT)의 sub 클레임으로 본인 userId를 확정적으로 얻는다.
 // 매 API 호출마다 "me" 리터럴이 먹히는지 확률적으로 확인하는 것보다 견고하다.
-const SCOPES = ['calendar', 'task', 'mail', 'user.read', 'openid'] as const;
+const SCOPES = ['calendar', 'task', 'mail', 'file', 'user.read', 'openid'] as const;
 
 interface TokenResponse {
   access_token: string;
